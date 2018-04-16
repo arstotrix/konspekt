@@ -1,0 +1,49 @@
+import os
+start_path = 'bbc'
+fnames = os.listdir(start_path)
+for fname in fnames:
+    path_to_file = os.path.join(start_path, fname)
+    if os.path.isfile(path_to_file):
+        print('dat boi is a file')
+    elif os.path.isdir(path_to_file):
+        print('dat mofo is a dir')
+    else:
+        print('nooooo')
+
+'''
+if os.path.exists(path_to_readme):
+    print('it exists')
+    with open (path_to_readme) as f:
+        txt = f.read()
+        print(txt)
+
+for fname in fnames:
+    if  '.' not in fname:
+        print(fname)
+        new_path = os.path.join(start_path, fname)
+        print(new_path)
+        inner_files = os.listdir(new_path)
+        #inner_files = os.listdir(start_path + '/' + fname)
+        print(len(inner_files), 'files')
+    
+
+
+    ext = fname.split('.')[-1]
+    #print(ext)
+    if ext in ftypes:
+        ftypes[ext] +=1
+    else:
+        ftypes[ext] = 1
+print(ftypes)
+
+txtfl = 0
+dirs = 0
+print(fnames)
+for fname in fnames:
+    if '.txt' in fname.lower():
+        txtfl += 1
+    elif '.' not in fname:
+        dirs += 1
+print (txtfl, dirs)
+'''    
+            
