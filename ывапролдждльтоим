@@ -1,0 +1,18 @@
+import os
+
+def south_park_dirs(csvfn):
+    with open (csvfn) as csvf:
+        lines = csvf.readlines()
+        for line in lines [1:]:
+            if re.match('\d+, \d+,', line)
+            cells = line.split(',')
+            if len(cells) == 4:
+                season, episode, character, line = cells
+                if season in path:
+                    
+                else:
+                    season_path = os.path.join(path, season)
+                    os.mkdir(season_path)
+
+
+south_park_dirs(r'C:\Users\student\Desktop\all-seasons.csv')
